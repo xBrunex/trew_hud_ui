@@ -19,7 +19,7 @@ Config.voice = {
 	levels = {
 		default = 5.0,
 		shout = 12.0,
-		whisper = 1.0,
+		whisper = 2.0,
 		current = 0
 	},
 	
