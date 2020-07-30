@@ -489,10 +489,10 @@ Citizen.CreateThread(function()
 					NetworkSetTalkerProximity(Config.voice.levels.default)
 					voiceDistance = 'normal'
 				elseif Config.voice.levels.current == 1 then
-					NetworkSetTalkerProximity(Config.voice.levels.shout)
+					NetworkSetTalkerProximity(12.0)
 					voiceDistance = 'shout'
 				elseif Config.voice.levels.current == 2 then
-					NetworkSetTalkerProximity(Config.voice.levels.whisper)
+					NetworkSetTalkerProximity(2.0)
 					voiceDistance = 'whisper'
 				end
 
@@ -678,9 +678,9 @@ AddEventHandler('esx:onPlayerSpawn', function()
 		if Config.voice.levels.current == 0 then
 			NetworkSetTalkerProximity(Config.voice.levels.default)
 		elseif Config.voice.levels.current == 1 then
-			NetworkSetTalkerProximity(Config.voice.levels.shout)
+			NetworkSetTalkerProximity(12.0)
 		elseif Config.voice.levels.current == 2 then
-			NetworkSetTalkerProximity(Config.voice.levels.whisper)
+			NetworkSetTalkerProximity(2.0)
 		end
 	end
 end)
